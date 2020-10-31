@@ -64,7 +64,7 @@ export default {
 }
 .writeup {
   font-size: 3vw;
-  padding: 0 1vw;
+  padding: 0 8vw;
 }
 .writeup .orange {
   color: #CA9B00;
@@ -79,7 +79,8 @@ export default {
   display: block;
   margin: 3vw 0vw;
   width: 100%;
-  height: 54vw;
+  height: 48vw;
+  object-fit: cover;
 }
 .link {
   color: #1DB660;

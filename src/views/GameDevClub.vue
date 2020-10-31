@@ -59,7 +59,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(20, 20, 20, 0.85);
+  background-color: rgba(20, 20, 20, 0.8);
 }
 #title {
   margin: 0;
@@ -73,14 +73,14 @@ export default {
 }
 .writeup {
   font-size: 3vw;
-  padding: 0 1vw;
+  padding: 0 8vw;
   color: white;
 }
 .demoVid {
   display: block;
   margin: 3vw 0vw;
   width: 100%;
-  height: 53vw;
+  height: 44vw;
   object-fit: cover;
 }
 .link {

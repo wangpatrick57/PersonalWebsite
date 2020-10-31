@@ -4,45 +4,43 @@
       <span class="hiim">Hi, I'm</span><br/>
       <span class="patrick">Patrick</span> <span class="wang">Wang</span>
     </h1>
-    <div v-if="isMobile">
-      view this on your computer!
+    <div class="mobileWarning" v-if="isMobile">
+      I look much better on a computer!
     </div>
-    <div v-else>
-      <div id="sideMenuIcon" :class="[hover ? hover : '']" @click="showSideMenu=!showSideMenu">
-        <ThreeLinesIcon :class="['threeLines', showSideMenu ? 'fadeOut' : '']"/>
-        <ArrowIcon :class="['arrow', showSideMenu ? '' : 'fadeOut']"/>
+    <div id="sideMenuIcon" :class="[hover ? hover : '']" @click="showSideMenu=!showSideMenu">
+      <ThreeLinesIcon :class="['threeLines', showSideMenu ? 'fadeOut' : '']"/>
+      <ArrowIcon :class="['arrow', showSideMenu ? '' : 'fadeOut']"/>
+    </div>
+    <transition name="sidemenu">
+      <div v-if="showSideMenu" id="sideMenu">
+        <div v-for="option in sideMenuOptions" :ref="option.id" :key="option.text" :class="['sideMenuOption', hover ? hover : '', hover === 'colorsseum' ? option.colorsseumColor : '']" @click="$router.push(option.path)" @mouseover="sideMenuHover(option.id, true)" @mouseleave="sideMenuHover(option.id, false)">
+          {{ option.text }}
+        </div>
       </div>
-      <transition name="sidemenu">
-        <div v-if="showSideMenu" id="sideMenu">
-          <div v-for="option in sideMenuOptions" :ref="option.id" :key="option.text" :class="['sideMenuOption', hover ? hover : '', hover === 'colorsseum' ? option.colorsseumColor : '']" @click="$router.push(option.path)" @mouseover="sideMenuHover(option.id, true)" @mouseleave="sideMenuHover(option.id, false)">
-            {{ option.text }}
-          </div>
+    </transition>
+    <div id="plaqueWall">
+      <div class="plaqueWrapper">
+        <img class="plaque" src="../assets/tapestryPlaque.png" @mouseover="setHover('tapestry')" @mouseleave="setHover('')" @click="goToPlaquePage('tapestry')">
+        <div :class="['plaqueDesc', hover === 'tapestry' ? hover : '']">
+          An educational tool which lets you visualize your code's memory
         </div>
-      </transition>
-      <div id="plaqueWall">
-        <div class="plaqueWrapper">
-          <img class="plaque" src="../assets/tapestryPlaque.png" @mouseover="setHover('tapestry')" @mouseleave="setHover('')" @click="goToPlaquePage('tapestry')">
-          <div :class="['plaqueDesc', hover === 'tapestry' ? hover : '']">
-            An educational tool which lets you visualize your code's memory
-          </div>
+      </div>
+      <div class="plaqueWrapper">
+        <img class="plaque" src="../assets/colorsseumPlaque.png" @mouseover="setHover('colorsseum')" @mouseleave="setHover('')" @click="goToPlaquePage('colorsseum')">
+        <div :class="['plaqueDesc', hover === 'colorsseum' ? hover : '']">
+          A platform fighter with abilities like a MOBA
         </div>
-        <div class="plaqueWrapper">
-          <img class="plaque" src="../assets/colorsseumPlaque.png" @mouseover="setHover('colorsseum')" @mouseleave="setHover('')" @click="goToPlaquePage('colorsseum')">
-          <div :class="['plaqueDesc', hover === 'colorsseum' ? hover : '']">
-            A platform fighter with abilities like a MOBA
-          </div>
+      </div>
+      <div class="plaqueWrapper">
+        <img class="plaque" src="../assets/roboticsPlaque.png" @mouseover="setHover('robotics')" @mouseleave="setHover('')" @click="goToPlaquePage('robotics')">
+        <div :class="['plaqueDesc', hover === 'robotics' ? hover : '']">
+          A training simulation of the 2018 FIRST Robotics Game
         </div>
-        <div class="plaqueWrapper">
-          <img class="plaque" src="../assets/roboticsPlaque.png" @mouseover="setHover('robotics')" @mouseleave="setHover('')" @click="goToPlaquePage('robotics')">
-          <div :class="['plaqueDesc', hover === 'robotics' ? hover : '']">
-            A training simulation of the 2018 FIRST Robotics Game
-          </div>
-        </div>
-        <div class="plaqueWrapper">
-          <img class="plaque" src="../assets/gdcPlaque.png" @mouseover="setHover('gdc')" @mouseleave="setHover('')" @click="goToPlaquePage('gdc')">
-          <div :class="['plaqueDesc', hover === 'gdc' ? hover : '']">
-            Cupertino High School's game development club
-          </div>
+      </div>
+      <div class="plaqueWrapper">
+        <img class="plaque" src="../assets/gdcPlaque.png" @mouseover="setHover('gdc')" @mouseleave="setHover('')" @click="goToPlaquePage('gdc')">
+        <div :class="['plaqueDesc', hover === 'gdc' ? hover : '']">
+          Cupertino High School's game development club
         </div>
       </div>
     </div>
@@ -156,6 +154,12 @@ export default {
 }
 #title > span {
   transition: color 0.5s;
+}
+.mobileWarning {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  color: black;
 }
 #sideMenuIcon {
   position: fixed;

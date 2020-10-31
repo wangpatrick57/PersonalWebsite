@@ -85,7 +85,7 @@ export default {
 }
 .writeup {
   font-size: 3vw;
-  padding: 0 1vw;
+  padding: 0 8vw;
   color: #C8726E;
   margin-bottom: 0;
 }
