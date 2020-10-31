@@ -122,12 +122,14 @@ export default {
       element.style.transition = oldTransition
     },
     setHover (newHover) {
-      this.hover = newHover
+      if (this.$router.currentRoute.path === '/') { // on Safari it calls setHover('') even when you go to a different page
+        this.hover = newHover
 
-      if (this.hover === '') {
-        document.body.style.backgroundColor = 'white'
-      } else {
-        document.body.style.backgroundColor = this.pageColors[this.hover]
+        if (this.hover === '') {
+          document.body.style.backgroundColor = 'white'
+        } else {
+          document.body.style.backgroundColor = this.pageColors[this.hover]
+        }
       }
     },
     goToPlaquePage (path) {
@@ -188,8 +190,8 @@ export default {
 }
 #sideMenu {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0p;
   height: 100%;
   width: 20vw;
   background: transparent;

@@ -1,9 +1,14 @@
-:root {
-  --main-font: 'Gotham';
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamPro-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamPro-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamPro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamPro-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
 div, h1, h2, button {
-  font-family: var(--main-font);
+  font-family: 'GothamPro';
   font-weight: normal;
 }
 p {
