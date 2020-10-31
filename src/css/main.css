@@ -1,0 +1,12 @@
+:root {
+  --main-font: 'Gotham';
+}
+
+div, h1, h2, button {
+  font-family: var(--main-font);
+  font-weight: normal;
+}
+p {
+  font-family: 'Futura';
+  font-weight: lighter;
+}
