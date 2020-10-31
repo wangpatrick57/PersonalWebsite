@@ -58,6 +58,7 @@ export default {
   width: 100%;
   height: 52vw;
   background-color: #080717;
+  object-fit: cover;
 }
 #title {
   position: absolute;
@@ -95,7 +96,8 @@ export default {
 .photo {
   margin-top: 3vw;
   width: 100%;
-  height: 67vw;
+  height: 55vw;
+  object-fit: cover;
 }
 .ps {
   font-size: 1.8vw;

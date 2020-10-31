@@ -61,6 +61,7 @@ export default {
   width: 100%;
   height: 57vw;
   background-color: #FFDBFF;
+  object-fit: cover;
 }
 .writeup {
   font-size: 3vw;

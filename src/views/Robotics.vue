@@ -108,6 +108,7 @@ export default {
 .photo {
   margin-top: 3vw;
   width: 100%;
-  height: 75vw;
+  height: 60vw;
+  object-fit: cover;
 }
 </style>
