@@ -109,6 +109,7 @@ export default {
   text-align: center;
   padding: 0.25vw 0;
   border-radius: 0.3vw;
+  font-size: 0.8vw;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
