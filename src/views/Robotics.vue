@@ -84,8 +84,6 @@ export default {
   font-size: 14vw;
 }
 .writeup {
-  font-size: 3vw;
-  padding: 0 8vw;
   color: #C8726E;
   margin-bottom: 0;
 }
@@ -97,7 +95,7 @@ export default {
   margin: 3vw 0vw;
   width: 100%;
   height: 53vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 .link {
   color: #1DB660;

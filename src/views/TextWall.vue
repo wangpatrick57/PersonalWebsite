@@ -7,8 +7,8 @@
       <ul>
         <li>Wrote Tapestry in Python</li>
         <li>I do all my Leetcode problems in Python</li>
-        <li>Intro to Programming (ICS 32A)</li>
-        <li>Python Programming with Libraries (ICS 33)</li>
+        <li>Python Programming with Libraries (ICS 32A)</li>
+        <li>Intermediate Python Programming (ICS 33)</li>
       </ul>
       <li>C++/C</li>
       <ul>

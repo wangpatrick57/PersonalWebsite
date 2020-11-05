@@ -72,8 +72,6 @@ export default {
   font-size: 15vw;
 }
 .writeup {
-  font-size: 3vw;
-  padding: 0 8vw;
   color: white;
 }
 .demoVid {
@@ -81,7 +79,7 @@ export default {
   margin: 3vw 0vw;
   width: 100%;
   height: 44vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 .link {
   color: #1DB660;

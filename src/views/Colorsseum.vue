@@ -3,11 +3,17 @@
     <img id="bigBoy" src="../assets/colorsseum.png"/>
     <p class="writeup">
       <span class="orange">
-        I made Colorsseum because I wanted to like Smash Bros, but I felt the abilities were too hard to execute and too
-        hard to remember. It takes months to get proficient at a single character, because there are about 20 different
-        moves every character can do and half of them are different variations of punches. It's definitely a great game
-        and I really enjoy playing Bowser, but it's not a good party game. Colorsseum it basically Smash Bros, but each
-        character has four distinct, easy to use abilities, like a MOBA.<br>
+        In 7th grade, I took Yearbook as an elective, which was my favorite class in middle school. It was both because
+        I liked being a Yearbook photographer and because, since I was a photographer, I had nothing to do in class so I
+        played games with my friend every day. Our favorite game was <i>Test Subject Arena 2</i>, which was a platform fighter
+        with one melee guy, six guys that shoot bullets which go straight, and one guy that throws a ball that rolls and has
+        gravity.<br>
+        <br>
+        I felt like there was so much potential with this game that it hadn't tapped into, considering six of the characters
+        literally did the same thing, so in high school I made my own version of this game. It's a platform fighter based on
+        ranged attacks with various types of projectiles and mobility abilities, quite similar to a MOBA. The video below
+        shows a match between the rogue, who specializes in mobility and precise close range attacks, and the caster, who has
+        the most difficult projectiles to master.
       </span>
       <video class="demoVid" controls>
         <source src="../assets/colorsseumDemo.mp4" type="video/mp4"/>
@@ -30,7 +36,7 @@
       </span>
       <br>
       <span class="orange">
-        Download the game <a class="link" target="_blank" href="https://fishgoatman.itch.io/colorsseum">here</a>
+        Download the game (and also see the other 2 characters) <a class="link" target="_blank" href="https://fishgoatman.itch.io/colorsseum">here!</a>
       </span>
     </p>
   </div>
@@ -63,10 +69,6 @@ export default {
   background-color: #FFDBFF;
   object-fit: cover;
 }
-.writeup {
-  font-size: 3vw;
-  padding: 0 8vw;
-}
 .writeup .orange {
   color: #CA9B00;
 }
@@ -81,7 +83,7 @@ export default {
   margin: 3vw 0vw;
   width: 100%;
   height: 48vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 .link {
   color: #1DB660;

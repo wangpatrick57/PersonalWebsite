@@ -71,8 +71,6 @@ export default {
 }
 .writeup {
   color: #F3E8C5;
-  font-size: 3vw;
-  padding: 0 8vw;
 }
 .code {
   color: #AF770D;
@@ -107,6 +105,6 @@ export default {
   margin: 3vw 0vw;
   width: 100%;
   height: 39vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 </style>
