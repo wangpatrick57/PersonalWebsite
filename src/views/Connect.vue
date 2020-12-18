@@ -120,6 +120,7 @@ export default {
   position: absolute;
   bottom: 100%;  /* At the top of the tooltip */
   left: 50%;
+  color: black;
   margin-left: -0.25vw;
   border-width: 0.25vw;
   border-style: solid;

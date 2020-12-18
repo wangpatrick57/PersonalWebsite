@@ -18,8 +18,8 @@
       <video class="demoVid" controls>
         <source src="../assets/tapestryDemo.mp4" type="video/mp4"/>
       </video>
-      I'm currently developing Tapestry with two good friends of mine, <a class="link" target="_blank" href="https://ryanmohta.com">@Ryan Mohta</a> and
-      <a class="link" target="_blank" href="https://arthurlafrance.com">@Arthur Lafrance</a>. Unfortunately, that means our product is not yet ready for
+      I'm currently developing Tapestry with two friends of mine, <a class="link" target="_blank" href="https://ryanmohta.com">Ryan Mohta</a> and
+      <a class="link" target="_blank" href="https://arthurlafrance.com">Arthur Lafrance</a>. Unfortunately, that means our product is not yet ready for
       public eyes to see, so no website link here. Anyways, we started Tapestry at HackUCI 2020, and we actually
       <a class="link" target="_blank" href="https://devpost.com/software/tapestry">won Best Entreprenurial Hack</a>! The photo shows Arthur, me, and Ryan left to right
       (the girl is just the HackUCI representative).

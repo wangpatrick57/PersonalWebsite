@@ -5,13 +5,13 @@
     </div>
     <h1 id="title">GAME DEV CLUB</h1>
     <p class="writeup">
-      I co-founded Game Dev Club in my senior year of high school, with my good friend Ethan Soo. I had been thinking about
+      I co-founded Game Dev Club in my senior year of high school, with my friend Ethan Soo. I had been thinking about
       making a game development club at my school because I was into both the "game dev" and "club" aspects of it. In my
       senior year, I decided it was now or never, and started planning the club that summer.<br>
       <video class="demoVid" controls>
         <source src="../assets/gdcPromo.mp4" type="video/mp4"/>
       </video>
-      Above is the first promo video that our other friend, Julia Shuieh, created, showcasing some games that me and Ethan had made.
+      Above is the first promo video that our other friend, <a class="link" target="_blank" href="https://jshuieh.github.io/">Julia Shuieh</a>, created, showcasing some games that me and Ethan had made.
       It sounds cheesy but that video really convinced me that I'd made the right choice in starting Game Dev Club. It was magical
       the first time I watched it. Fun fact: me closing the computer at the end is actually the reversed clip of me opening the computer.<br>
       <video class="demoVid" controls>
