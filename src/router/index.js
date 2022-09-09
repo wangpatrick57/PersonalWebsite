@@ -16,6 +16,11 @@ const routes = [
     component: () => import('@/views/Tapestry.vue')
   },
   {
+    path: '/rls',
+    name: 'Real Life Strategy',
+    component: () => import('@/views/RealLifeStrategy.vue')
+  },
+  {
     path: '/colorsseum',
     name: 'Colorsseum',
     component: () => import('@/views/Colorsseum.vue')

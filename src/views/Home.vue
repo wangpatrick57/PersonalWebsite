@@ -26,6 +26,12 @@
         </div>
       </div>
       <div class="plaqueWrapper">
+        <img class="plaque" src="../assets/rlsPlaque.png" @mouseover="setHover('rls')" @mouseleave="setHover('')" @click="goToPlaquePage('rls')">
+        <div :class="['plaqueDesc', hover === 'rls' ? hover : '']">
+          A strategy game that takes place in the real world
+        </div>
+      </div>
+      <div class="plaqueWrapper">
         <img class="plaque" src="../assets/colorsseumPlaque.png" @mouseover="setHover('colorsseum')" @mouseleave="setHover('')" @click="goToPlaquePage('colorsseum')">
         <div :class="['plaqueDesc', hover === 'colorsseum' ? hover : '']">
           A platform fighter with abilities like a MOBA
@@ -63,6 +69,7 @@ export default {
       hover: null,
       pageColors: {
         tapestry: '#323757',
+        rls: '#CBCDD1',
         colorsseum: '#FFDBFF',
         gdc: '#525252',
         robotics: '#AE4C45'
@@ -253,6 +260,9 @@ export default {
 
 .plaqueDesc.tapestry {
   color: #A67B25;
+}
+.plaqueDesc.rls {
+  color: #FFFFFF;
 }
 .plaqueDesc.colorsseum {
   color: #1DB660;
