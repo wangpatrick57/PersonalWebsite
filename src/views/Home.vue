@@ -4,9 +4,6 @@
       <span class="hiim">Hi, I'm</span><br/>
       <span class="patrick">Patrick</span> <span class="wang">Wang</span>
     </h1>
-    <div class="mobileWarning" v-if="isMobile">
-      I look much better on a computer!
-    </div>
     <div id="sideMenuIcon" :class="[hover ? hover : '']" @click="showSideMenu=!showSideMenu">
       <ThreeLinesIcon :class="['threeLines', showSideMenu ? 'fadeOut' : '']"/>
       <ArrowIcon :class="['arrow', showSideMenu ? '' : 'fadeOut']"/>
@@ -20,31 +17,31 @@
     </transition>
     <div id="plaqueWall">
       <div class="plaqueWrapper">
-        <img class="plaque" src="../assets/tapestryPlaque.png" @mouseover="setHover('tapestry')" @mouseleave="setHover('')" @click="goToPlaquePage('tapestry')">
+        <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/tapestryPlaque.png" @mouseover="setHover('tapestry')" @mouseleave="setHover('')" @click="goToPlaquePage('tapestry')">
         <div :class="['plaqueDesc', hover === 'tapestry' ? hover : '']">
           An educational tool which lets you visualize your code's memory
         </div>
       </div>
       <div class="plaqueWrapper">
-        <img class="plaque" src="../assets/rlsPlaque.png" @mouseover="setHover('rls')" @mouseleave="setHover('')" @click="goToPlaquePage('rls')">
+        <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/rlsPlaque.png" @mouseover="setHover('rls')" @mouseleave="setHover('')" @click="goToPlaquePage('rls')">
         <div :class="['plaqueDesc', hover === 'rls' ? hover : '']">
           A strategy game that takes place in the real world
         </div>
       </div>
       <div class="plaqueWrapper">
-        <img class="plaque" src="../assets/colorsseumPlaque.png" @mouseover="setHover('colorsseum')" @mouseleave="setHover('')" @click="goToPlaquePage('colorsseum')">
+        <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/colorsseumPlaque.png" @mouseover="setHover('colorsseum')" @mouseleave="setHover('')" @click="goToPlaquePage('colorsseum')">
         <div :class="['plaqueDesc', hover === 'colorsseum' ? hover : '']">
           A platform fighter with abilities like a MOBA
         </div>
       </div>
       <div class="plaqueWrapper">
-        <img class="plaque" src="../assets/roboticsPlaque.png" @mouseover="setHover('robotics')" @mouseleave="setHover('')" @click="goToPlaquePage('robotics')">
+        <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/roboticsPlaque.png" @mouseover="setHover('robotics')" @mouseleave="setHover('')" @click="goToPlaquePage('robotics')">
         <div :class="['plaqueDesc', hover === 'robotics' ? hover : '']">
           A training simulation of the 2018 FIRST Robotics Game
         </div>
       </div>
       <div class="plaqueWrapper">
-        <img class="plaque" src="../assets/gdcPlaque.png" @mouseover="setHover('gdc')" @mouseleave="setHover('')" @click="goToPlaquePage('gdc')">
+        <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/gdcPlaque.png" @mouseover="setHover('gdc')" @mouseleave="setHover('')" @click="goToPlaquePage('gdc')">
         <div :class="['plaqueDesc', hover === 'gdc' ? hover : '']">
           Cupertino High School's game development club
         </div>
@@ -92,19 +89,20 @@ export default {
   },
   computed: {
     isMobile () {
-      const toMatch = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /Windows Phone/i
-      ]
-
-      return toMatch.some((toMatchItem) => {
-        return navigator.userAgent.match(toMatchItem)
-      })
+      return true
+      // const toMatch = [
+      //   /Android/i,
+      //   /webOS/i,
+      //   /iPhone/i,
+      //   /iPad/i,
+      //   /iPod/i,
+      //   /BlackBerry/i,
+      //   /Windows Phone/i
+      // ]
+      //
+      // return toMatch.some((toMatchItem) => {
+      //   return navigator.userAgent.match(toMatchItem)
+      // })
     }
   },
   methods: {
@@ -230,20 +228,17 @@ export default {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.plaqueTemp {
-  text-align: center;
-  font-size: 2.5vw;
-  width: 45vw;
-  padding: 1.5vw 0;
-  margin: 1vw 0.5vw;
-  cursor: pointer;
-}
 .plaqueWrapper {
   position: relative;
 }
 .plaque {
   cursor: pointer;
   width: 45vw;
+  margin: 1vw 0.5vw;
+}
+.plaqueMobile {
+  cursor: pointer;
+  width: 80vw;
   margin: 1vw 0.5vw;
 }
 .plaqueDesc {
