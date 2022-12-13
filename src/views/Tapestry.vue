@@ -3,7 +3,7 @@
     <img id="bigBoy" src="../assets/tapesthree.png"/>
     <h1 id="title">TAPESTRY</h1>
     <p class="writeup">
-      Tapestry (full name Tapestry Lab) is a computer science educational tool, which analyzes Python code and generates an interactive memory diagram.
+      Tapestry is a computer science educational tool which analyzes Python code and generates an interactive memory diagram.
       For example, for this code below:<br>
       <span class="code">
         x = 1
@@ -18,9 +18,8 @@
       <video class="demoVid" controls>
         <source src="../assets/tapestryDemo.mp4" type="video/mp4"/>
       </video>
-      I'm currently developing Tapestry with two friends of mine, <a class="link" target="_blank" href="https://ryanmohta.com">Ryan Mohta</a> and
-      <a class="link" target="_blank" href="https://arthurlafrance.com">Arthur Lafrance</a>. Unfortunately, that means our product is not yet ready for
-      public eyes to see, so no website link here. Anyways, we started Tapestry at HackUCI 2020, and we actually
+      I developed Tapestry with two friends of mine, <a class="link" target="_blank" href="https://ryanmohta.com">Ryan Mohta</a> and
+      <a class="link" target="_blank" href="https://arthurlafrance.com">Arthur Lafrance</a>. We started Tapestry at HackUCI 2020, and we actually
       <a class="link" target="_blank" href="https://devpost.com/software/tapestry">won Best Entreprenurial Hack</a>! The photo shows Arthur, me, and Ryan left to right
       (the girl is just the HackUCI representative).
       <img class="photo" src="../assets/tapestryWin.jpg">
