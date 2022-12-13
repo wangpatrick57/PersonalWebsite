@@ -24,12 +24,12 @@
           An educational tool which lets you visualize your code's memory
         </div>
       </div>
-      <div class="plaqueWrapper">
+      <!-- <div class="plaqueWrapper">
         <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/rlsPlaque.png" @mouseover="setHover('rls')" @mouseleave="setHover('')" @click="goToPlaquePage('rls')">
         <div :class="['plaqueDesc', hover === 'rls' && !isMobile ? hover : '']">
           A strategy game that takes place in the real world
         </div>
-      </div>
+      </div> -->
       <div class="plaqueWrapper">
         <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/colorsseumPlaque.png" @mouseover="setHover('colorsseum')" @mouseleave="setHover('')" @click="goToPlaquePage('colorsseum')">
         <div :class="['plaqueDesc', hover === 'colorsseum' && !isMobile ? hover : '']">
