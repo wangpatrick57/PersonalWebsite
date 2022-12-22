@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: 'Tapestry',
+  name: 'Colorsseum',
   data () {
     return {
       colorsseumPurple: '#FFDBFF'
