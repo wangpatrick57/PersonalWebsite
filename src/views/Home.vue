@@ -18,6 +18,12 @@
       </div>
     </transition>
     <div id="plaqueWall">
+        <div class="plaqueWrapper">
+          <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/foodpoolPlaque.png" @mouseover="setHover('foodpool')" @mouseleave="setHover('')" @click="goToPlaquePage('foodpool')">
+          <div :class="['plaqueDesc', hover === 'foodpool' && !isMobile ? hover : '']">
+            A carpooling food delivery startup for college apartments
+          </div>
+        </div>
       <div class="plaqueWrapper">
         <img :class="[isMobile ? 'plaqueMobile' : 'plaque']" src="../assets/tapestryPlaque.png" @mouseover="setHover('tapestry')" @mouseleave="setHover('')" @click="goToPlaquePage('tapestry')">
         <div :class="['plaqueDesc', hover === 'tapestry' && !isMobile ? hover : '']">
@@ -67,6 +73,7 @@ export default {
       showSideMenu: false,
       hover: null,
       pageColors: {
+        foodpool: '#66c490',
         tapestry: '#323757',
         rls: '#CBCDD1',
         colorsseum: '#FFDBFF',
@@ -282,6 +289,9 @@ export default {
   transition: color 0.5s;
 }
 
+.plaqueDesc.foodpool {
+  color: #FFFFFF;
+}
 .plaqueDesc.tapestry {
   color: #A67B25;
 }
@@ -296,6 +306,15 @@ export default {
 }
 .plaqueDesc.robotics {
   color: #E99791;
+}
+#title.foodpool {
+  color: #FFFFFF;
+}
+.sideMenuIcon.foodpool > svg {
+  fill: #FFFFFF;
+}
+.sideMenuOption.foodpool {
+  color: #FFFFFF;
 }
 #title.tapestry {
   color: #A67B25;

@@ -11,6 +11,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/foodpool',
+    name: 'Foodpool',
+    component: () => import('@/views/Foodpool.vue')
+  },
+  {
     path: '/tapestry',
     name: 'Tapestry',
     component: () => import('@/views/Tapestry.vue')

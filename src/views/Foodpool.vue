@@ -1,29 +1,37 @@
 <template>
   <div>
-    <img id="bigBoy" src="../assets/colorsseum.png"/>
+    <img id="bigBoy" src="../assets/foodpoolHero.png"/>
     <p class="writeup">
-      Foodpool is a startup I made with three friends which provided a carpooling food delivery service to college students. Food delivery with
+      Foodpool is a startup I cofounded with <a class="link" target="_blank" href="https://arthurlafrance.com">Arthur Lafrance</a>, <a class="link" target="_blank" href="https://kxvin.com">Kevin Xu</a>, and <a class="link" target="_blank" href="https://www.linkedin.com/in/sanghyun-byun/">Sanghyun Byun</a>.
+      I was frustrated at how expensive normal food delivery was and wanted to make a cheaper alternative for college students using carpooling. Food delivery with
       Doordash or UberEats generally costs $10 on top of the food, but Foodpool's price was only $2 as we delivered everyone's food at the same time.
       We tried out a lot of different ways to do this over the months, but the most successful model was this: we deliver from a single restaurant
       each day, at 12pm and 6pm. For example, one week's menu looked like this:<br>
-
-      On the business side, I did about 100 customer interviews in total, recruited team members (2 developers, 1 designer, 1 social media manager),
-      raised $10,000 through competitions, and just generally decided what we were doing at any given time. On the technical side, I helped with
-      architecting our backend (using experience from building networked games), and I developed half of the iOS app.<br>
-
-      Just for fun, here's an early marketing video I made. It uses an old on-demand carpooling model, but it's still a fun watch :).
-
-      You can also check out our ordering website here.
+      <img id="exampleMenu" src="../assets/fpExampleMenu.png"/>
+      On the business side, I recruited 2 employees, raised $10,000 through competitions, did 50 customer interviews over the course of the startup,
+      averaged 10 orders a week, developed marketing material, and just generally made decisions on what to work on. On the technical side, I helped with
+      architecting our backend (using experience from building networked games), and I developed half of the iOS app. Below is a demo.<br>
+      <video class="demoVid" controls>
+        <source src="../assets/fpDemo.mp4" type="video/mp4"/>
+      </video>
+      We later decided to get rid of the app in favor of a spreadsheet, which was the most important (good) decision I made since it allowed us to prototype much faster.
+      After some prototyping, we found a model that got twice as many orders as the app, which was mind-blowing to us since we had spent about 50x less time developing the spreadsheet.
+      Kevin developed this model into a website, which you can view <a class="link" target="_blank" href="https://foodpool.app">here.</a><br>
+      <br>
+      Just for fun, here's also an early marketing video we made. It explains an older carpooling model, but it's still a fun watch :).<br>
+      <video class="demoVid" controls>
+        <source src="../assets/fpMarketingVid.mp4" type="video/mp4"/>
+      </video>
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Tapestry',
+  name: 'Foodpool',
   data () {
     return {
-      colorsseumPurple: '#FFDBFF'
+      colorsseumPurple: '#3fb975'
     }
   },
   created () {
@@ -41,18 +49,16 @@ export default {
 <style scoped>
 #bigBoy {
   width: 100%;
-  height: 57vw;
-  background-color: #FFDBFF;
+  height: 70vw;
+  background-color: #1d1d1d;
   object-fit: cover;
 }
-.writeup .orange {
-  color: #CA9B00;
-}
-.writeup .green {
-  color: #1DB660;
-}
-.writeup .blue {
-  color: #2C95D1;
+#exampleMenu {
+  width: 100%;
+  height: 60vw;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .demoVid {
   display: block;
@@ -61,10 +67,13 @@ export default {
   height: 48vw;
   object-fit: contain;
 }
+.writeup {
+    color: #FFFFFF;
+}
 .link {
-  color: #1DB660;
+  color: #1d1d1d;
 }
 .link:hover {
-  color: #CA9B00;
+  color: #505050;
 }
 </style>

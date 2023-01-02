@@ -36,7 +36,7 @@
       </span>
       <br>
       <span class="orange">
-        Download the game (and also see the other 2 characters) <a class="link" target="_blank" href="https://fishgoatman.itch.io/colorsseum">here!</a>
+        You can download the game <a class="link" target="_blank" href="https://fishgoatman.itch.io/colorsseum">here.</a>
       </span>
     </p>
   </div>
