@@ -14,6 +14,8 @@ cd dist
 echo 'www.wangpatrick.com' > CNAME
 
 git init
+git lfs install
+git lfs track "fpMarketingVid*mp4"
 git add -A
 git commit -m 'deploy'
 

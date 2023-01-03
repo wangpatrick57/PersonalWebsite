@@ -19,9 +19,7 @@
       Kevin developed this model into a website, which you can view <a class="link" target="_blank" href="https://foodpool.app">here.</a><br>
       <br>
       Just for fun, here's also an early marketing video we made. It explains an older carpooling model, but it's still a fun watch :).<br>
-      <video class="demoVid" controls>
-        <source src="../assets/fpMarketingVid.mp4" type="video/mp4"/>
-      </video>
+      <iframe class="youtubeVid" src="https://youtube.com/embed/dDkEbnI67gk"></iframe>
     </p>
   </div>
 </template>
@@ -65,6 +63,13 @@ export default {
   margin: 3vw 0vw;
   width: 100%;
   height: 48vw;
+  object-fit: contain;
+}
+.youtubeVid {
+  display: block;
+  margin: 3vw 0vw;
+  width: 100%;
+  height: 41vw;
   object-fit: contain;
 }
 .writeup {
